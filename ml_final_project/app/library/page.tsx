@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Upload, Activity, Heart, AlertCircle, Stethoscope, Microscope, Wind, FileImage, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
@@ -116,10 +116,13 @@ const LibraryPage = () => {
         // Simulate API call delay
         await new Promise(resolve => setTimeout(resolve, 3000));
 
-        // Mock analysis results
+        // Mock analysis results - generate random values only during user interaction
+        const confidence = Math.floor(Math.random() * 40 + 60); // 60-100%
+        const likelihood = Math.floor(Math.random() * 30 + 40); // 40-70%
+
         const mockResults = {
-            confidence: Math.floor(Math.random() * 40 + 60), // 60-100%
-            likelihood: Math.floor(Math.random() * 30 + 40), // 40-70%
+            confidence,
+            likelihood,
             recommendations: [
                 'Consult with a pulmonologist for further evaluation',
                 'Consider additional imaging studies if symptoms persist',
