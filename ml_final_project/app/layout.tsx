@@ -8,8 +8,8 @@ const bricolage = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "Converso",
-  description: "Real-time AI Teaching Platform",
+  title: "LungAI - Lung Disease Detection",
+  description: "AI-powered lung disease detection and analysis platform",
 };
 
 export default function RootLayout({
