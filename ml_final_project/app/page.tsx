@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Search, Stethoscope, Activity, Heart, AlertCircle } from 'lucide-react';
+import { Stethoscope, Activity, Heart, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 
 const HomePage = () => {
@@ -75,13 +75,12 @@ const HomePage = () => {
           {/* Symptom Input Bar */}
           <div className="max-w-2xl mx-auto mb-8">
             <div className="relative">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
                 type="text"
                 placeholder="Describe your symptoms (e.g., chest pain, shortness of breath, cough...)"
                 value={symptoms}
                 onChange={(e) => setSymptoms(e.target.value)}
-                className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl text-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
+                className="w-full px-4 py-4 border border-gray-300 rounded-xl text-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
               />
             </div>
             <div className="mt-4 flex justify-center">

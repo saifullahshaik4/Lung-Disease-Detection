@@ -10,6 +10,11 @@ const bricolage = Bricolage_Grotesque({
 export const metadata: Metadata = {
   title: "LungAI - Lung Disease Detection",
   description: "AI-powered lung disease detection and analysis platform",
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
 };
 
 export default function RootLayout({
