@@ -1,4 +1,4 @@
-import { Activity, Heart, Thermometer, Shield, Wind, Zap } from 'lucide-react';
+import { Activity, Heart, Shield, Zap } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 
 export interface Disease {
@@ -43,19 +43,6 @@ export const diseases: Disease[] = [
         borderColor: 'border-purple-200'
     },
     {
-        id: 'tuberculosis',
-        name: 'Tuberculosis',
-        description: 'Bacterial infection that mainly affects the lungs',
-        details: 'Tuberculosis (TB) is a serious infectious disease that mainly affects the lungs. The bacteria that cause TB are spread through the air when people with active TB cough, spit, speak, or sneeze. TB is treatable and curable with proper medication.',
-        symptoms: ['Persistent cough', 'Coughing up blood', 'Night sweats', 'Fever', 'Weight loss', 'Fatigue'],
-        severity: 'Severe',
-        commonAge: 'All ages, higher risk in certain populations',
-        icon: Thermometer,
-        color: 'bg-orange-100 text-orange-600',
-        bgColor: 'bg-orange-50',
-        borderColor: 'border-orange-200'
-    },
-    {
         id: 'covid-19',
         name: 'COVID-19',
         description: 'Respiratory illness caused by SARS-CoV-2 virus',
@@ -69,26 +56,13 @@ export const diseases: Disease[] = [
         borderColor: 'border-blue-200'
     },
     {
-        id: 'asthma',
-        name: 'Asthma',
-        description: 'Chronic condition affecting airways in the lungs',
-        details: 'Asthma is a chronic respiratory condition in which airways become inflamed, narrow, and produce extra mucus. This makes breathing difficult and triggers coughing, wheezing, and shortness of breath. Asthma can be managed with proper treatment.',
-        symptoms: ['Wheezing', 'Shortness of breath', 'Chest tightness', 'Coughing', 'Rapid breathing', 'Fatigue'],
-        severity: 'Mild to Moderate',
-        commonAge: 'All ages, often starts in childhood',
-        icon: Wind,
-        color: 'bg-green-100 text-green-600',
-        bgColor: 'bg-green-50',
-        borderColor: 'border-green-200'
-    },
-    {
         id: 'copd',
-        name: 'COPD',
-        description: 'Chronic obstructive pulmonary disease',
-        details: 'COPD is a group of progressive lung diseases including emphysema and chronic bronchitis. It blocks airflow and makes breathing difficult. COPD is primarily caused by long-term exposure to irritating gases or particulate matter, most often from cigarette smoke.',
+        name: 'COPD/Smoking Damage',
+        description: 'Chronic lung disease primarily caused by smoking-related damage',
+        details: 'COPD (Chronic Obstructive Pulmonary Disease) and smoking-related lung damage represent a group of progressive lung diseases including emphysema and chronic bronchitis. This condition is primarily caused by long-term smoking and exposure to harmful particles that damage the lungs and airways, making breathing increasingly difficult over time.',
         symptoms: ['Chronic cough', 'Shortness of breath', 'Wheezing', 'Chest tightness', 'Fatigue', 'Frequent infections'],
         severity: 'Moderate to Severe',
-        commonAge: '40 and older',
+        commonAge: '40 and older, especially smokers',
         icon: Zap,
         color: 'bg-yellow-100 text-yellow-600',
         bgColor: 'bg-yellow-50',

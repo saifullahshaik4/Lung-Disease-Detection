@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { FileImage } from 'lucide-react';
+import { FileImage, AlertTriangle } from 'lucide-react';
 
 interface AnalysisResult {
     confidence: number;
@@ -83,6 +83,17 @@ const XRayAnalysis: React.FC<XRayAnalysisProps> = ({ selectedDisease, className 
 
     return (
         <div className={className}>
+            {/* Warning Banner */}
+            <div className="bg-gradient-to-r from-yellow-400 to-orange-400 border-l-4 border-orange-500 p-4 mb-6 rounded-lg shadow-md">
+                <div className="flex items-center">
+                    <AlertTriangle className="w-6 h-6 text-white mr-3 flex-shrink-0" />
+                    <div className="text-white">
+                        <p className="font-bold text-lg">⚠️ NOTICE: This disease detection has not been implemented yet.</p>
+                        <p className="text-sm font-medium mt-1">This is a mock display for demonstration purposes only.</p>
+                    </div>
+                </div>
+            </div>
+
             <div className="bg-white p-6 rounded-xl shadow-sm border">
                 <h3 className="text-lg font-semibold mb-4">X-Ray Analysis</h3>
 
@@ -124,6 +135,13 @@ const XRayAnalysis: React.FC<XRayAnalysisProps> = ({ selectedDisease, className 
 
                 {analysisResult && !isAnalyzing && (
                     <div className="mt-6 space-y-4">
+                        {/* Simulation Disclaimer */}
+                        <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 mb-4">
+                            <p className="text-amber-800 text-sm font-medium">
+                                📊 These are simulated results for UI testing purposes only. Not for medical use.
+                            </p>
+                        </div>
+
                         <div className="grid grid-cols-2 gap-4">
                             <div className="bg-blue-50 p-4 rounded-lg">
                                 <h4 className="font-semibold text-blue-900">Confidence Score</h4>

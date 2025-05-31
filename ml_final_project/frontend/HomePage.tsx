@@ -11,11 +11,11 @@ import { diseases } from './constants/diseases';
 const HomePage = () => {
     const [symptoms, setSymptoms] = useState('');
 
-    const featuredDiseases = diseases.slice(0, 4); // First 4 diseases for homepage
+    const featuredDiseases = diseases.slice(0, 4); // Show all diseases for homepage
 
     const stats = [
         { label: 'Accuracy Rate', value: '95%', color: 'text-blue-600' },
-        { label: 'Disease Types', value: '10+', color: 'text-green-600' },
+        { label: 'Disease Types', value: '4', color: 'text-green-600' },
         { label: 'Analyses Completed', value: '1000+', color: 'text-purple-600' }
     ];
 
