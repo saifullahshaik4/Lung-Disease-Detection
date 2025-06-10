@@ -1,0 +1,16 @@
+# Stable version combination (tested working)
+fastapi==0.108.0
+uvicorn[standard]==0.25.0
+python-multipart==0.0.6
+pillow==10.2.0
+numpy==1.26.3
+tensorflow==2.15.0
+python-dotenv==1.0.1
+aiofiles==23.2.1
+pydantic==2.5.3
+pydantic-settings==2.1.0
+firebase-admin==6.4.0
+google-cloud-firestore==2.14.1
+httpx==0.26.0
+pytest==8.0.0
+pytest-asyncio==0.23.3 
